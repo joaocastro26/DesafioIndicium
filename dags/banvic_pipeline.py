@@ -6,12 +6,12 @@ from airflow.operators.python import PythonOperator # Importa a classe PythonOpe
 from airflow.operators.empty import EmptyOperator # Importa a classe EmptyOperator, uma tarefa que não faz nada, útil para organizar e sincronizar o fluxo do DAG.
 from datetime import datetime # Importa a classe datetime para definir a data de início do DAG.
 
-# Credenciais do banco de dados de ORIGEM (o banco 'banvic' no contêiner 'db').
-SOURCE_DB_USER = 'data_engineer'
-SOURCE_DB_PASSWORD = 'v3rysecur&pas5w0rd'
-SOURCE_DB_HOST = 'db'
-SOURCE_DB_PORT = '5432'
-SOURCE_DB_NAME = 'banvic'
+# Credenciais do banco de dados de ORIGEM (o banco origem no contêiner 'db').
+SOURCE_DB_USER = 'propriedadeprivada'
+SOURCE_DB_PASSWORD = 'propriedadeprivada'
+SOURCE_DB_HOST = 'propriedadeprivada'
+SOURCE_DB_PORT = 'propriedadeprivada'
+SOURCE_DB_NAME = 'propriedadeprivada'
 
 # Credenciais do Data Warehouse de DESTINO (o banco 'banvic_dwh' no contêiner 'dwh_postgres').
 DWH_DB_USER = 'dwh_user'

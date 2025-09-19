@@ -1,26 +1,3 @@
-services:
-  # Serviço do banco de dados de origem (o banco do BanVic).
-  db:
-    # A imagem e versão específica do PostgreSQL usada.
-    image: postgres:16
-    # Define o nome do contêiner para facilitar a referência no terminal.
-    container_name: banvic_postgres_db
-    # Variáveis de ambiente que configuram o banco de dados dentro do contêiner.
-    environment:
-      POSTGRES_DB: banvic
-      POSTGRES_USER: data_engineer
-      POSTGRES_PASSWORD: v3rysecur&pas5w0rd
-    # Mapeamento de volumes.
-    volumes:
-      # Mapeia a pasta local './dbdata' para o diretório de dados do PostgreSQL no contêiner.
-      - ./dbdata:/var/lib/postgresql/data
-      # Injeta o arquivo 'banvic.sql' que será executado automaticamente na inicialização.
-      - ./banvic.sql:/docker-entrypoint-initdb.d/banvic.sql
-    # Mapeamento de portas.
-    ports:
-      # A porta 5432 na máquina local se conecta à porta 5432 do contêiner.
-      - "5432:5432"
-
   # O Data Warehouse (destino dos dados do pipeline).
   dwh_postgres:
     image: postgres:16
