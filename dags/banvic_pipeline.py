@@ -6,7 +6,7 @@ from airflow.operators.python import PythonOperator # Importa a classe PythonOpe
 from airflow.operators.empty import EmptyOperator # Importa a classe EmptyOperator, uma tarefa que não faz nada, útil para organizar e sincronizar o fluxo do DAG.
 from datetime import datetime # Importa a classe datetime para definir a data de início do DAG.
 
-# Credenciais do banco de dados de ORIGEM (o banco origem no contêiner 'db').
+# Credenciais do banco de dados de ORIGEM foram alteradas para "propriedadeprivada" para não compartilhar informações que não me pertencem.
 SOURCE_DB_USER = 'propriedadeprivada'
 SOURCE_DB_PASSWORD = 'propriedadeprivada'
 SOURCE_DB_HOST = 'propriedadeprivada'
