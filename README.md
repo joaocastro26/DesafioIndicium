@@ -53,8 +53,8 @@ Para colocar o projeto em funcionamento, você só precisa ter o Docker e o Dock
 Clone o Repositório:
 
 ```Bash
-git clone <[https://github.com/joaocastro26/DesafioIndicium.git]>
-cd <DesafioIndicium>
+git clone https://github.com/joaocastro26/DesafioIndicium.git
+cd DesafioIndicium
 ```
 Inicie os Contêineres:
 No diretório raiz do projeto, execute o comando abaixo para construir as imagens e iniciar todos os serviços em segundo plano.
