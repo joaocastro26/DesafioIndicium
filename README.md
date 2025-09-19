@@ -99,4 +99,4 @@ Carregamento de Dados (load):
 
 A etapa final carrega os dados dos arquivos CSV extraídos para as tabelas correspondentes no Data Warehouse (dwh_postgres). A lógica de carregamento utiliza a função to_sql do pandas, que gerencia a criação das tabelas no destino, garantindo a idempotência do processo.
 
-Os arquivos CSV e os dados da database de origem dos dados foram removidas pois são propriedade privada.
+Os arquivos CSV e os dados da database de origem dos dados foram removidos pois são propriedade privada.
